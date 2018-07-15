@@ -1,0 +1,32 @@
+AllCops:
+  TargetRubyVersion: 2.4.1
+  Exclude:
+    - 'db/**/*'
+    - 'bin/*'
+
+Documentation:
+  Enabled: false
+
+Rails:
+  Enabled: true
+
+Metrics/LineLength:
+  Max: 100
+  Exclude:
+    - 'config/initializers/**/*.rb'
+
+Metrics/ModuleLength:
+  Exclude:
+    - 'test/**/*_test.rb'
+
+Metrics/ClassLength:
+  Exclude:
+    - 'test/**/*_test.rb'
+
+Metrics/BlockLength:
+  Exclude:
+    - 'config/environments/*.rb'
+    - 'test/**/*_test.rb'
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
