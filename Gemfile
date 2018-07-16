@@ -6,6 +6,9 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'bootstrap-sass'
 gem 'coffee-rails', '~> 4.2'
 gem 'devise', '4.4.3'
+gem 'devise-bootstrap-views', '0.0.11'
+gem 'haml-rails', '~> 1.0'
+gem 'jquery-rails', '4.3.1'
 gem 'pg', '1.0.0'
 gem 'puma', '~> 3.7'
 gem 'rails', '5.1.6'
@@ -18,7 +21,7 @@ group :development, :test do
   gem 'factory_bot_rails', '4.8.2'
   gem 'faker', '1.9.1'
   gem 'pry-rails', '0.3.6'
-  gem 'rspec-rails', '~> 3.7'
+  gem 'rspec-rails', '3.7.1'
   gem 'rubocop', '0.58.1'
 end
 
