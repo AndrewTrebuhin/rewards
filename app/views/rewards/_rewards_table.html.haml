@@ -1,0 +1,12 @@
+%table.table
+  %thead
+    %tr
+      %th ID
+      %th Status
+      %th Created at
+  %tody
+    - rewards_list.each do |r|
+      %tr
+        %td= r.id
+        %td= r.status.humanize
+        %td= formatted_date(r.created_at)

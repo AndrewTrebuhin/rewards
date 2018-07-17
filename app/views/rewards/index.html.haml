@@ -1,1 +1,10 @@
 %h1 My Rewards
+.row
+  .col-md-12
+    .panel.panel-default
+      .panel-heading Rewards
+      .panel-body
+        - if @rewards.empty?
+          %p.text-center You don't have any rewards yet
+        - else
+          = render 'rewards_table', rewards_list: @rewards
