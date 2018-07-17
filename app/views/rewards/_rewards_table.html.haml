@@ -10,3 +10,5 @@
         %td= r.id
         %td= r.status.humanize
         %td= formatted_date(r.created_at)
+.text-center
+  = paginate rewards_list
