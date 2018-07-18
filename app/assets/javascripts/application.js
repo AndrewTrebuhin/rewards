@@ -21,8 +21,7 @@ $(document).ready(function(){
     placeholder: 'Select statuses',
     theme: 'bootstrap',
     width: '100%',
-    allowClear: true,
-    closeOnSelect: false
+    allowClear: true
   });
 
   $('#statuses_select_box').on('select2:close', function(event){
