@@ -1,0 +1,10 @@
+.container
+  - if notice
+    .alert.alert-info
+      %button.close{'data-dismiss' => 'alert'}x
+      %p= notice
+
+  - if alert
+    .alert.alert-warning
+      %button.close{'data-dismiss' => 'alert'}x
+      %p= alert
