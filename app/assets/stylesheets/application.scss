@@ -13,6 +13,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "devise_bootstrap_views";
+@import "select2";
+@import "select2-bootstrap";
+@import "rewards";
 
 .vertical-center {
   min-height: 100%;

@@ -7,4 +7,6 @@ class Reward < ApplicationRecord
                  sent: 3,
                  redeemed: 4,
                  completed: 5 }
+
+  scope :filter_by_status, ->(status) { where(status: status) if status }
 end

@@ -11,7 +11,21 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require turbolinks
 //= require jquery
 //= require bootstrap-sprockets
+//= require select2
 //= require_tree .
+
+$(document).ready(function(){
+  $('#statuses_select_box').select2({
+    placeholder: 'Select statuses',
+    theme: 'bootstrap',
+    width: '100%',
+    allowClear: true,
+    closeOnSelect: false
+  });
+
+  $('#statuses_select_box').on('select2:close', function(event){
+    $(event.target).closest('form').submit();
+  });
+});
