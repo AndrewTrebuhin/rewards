@@ -4,29 +4,19 @@ AllCops:
     - 'db/**/*'
     - 'bin/*'
 
-Documentation:
-  Enabled: false
-
 Rails:
   Enabled: true
+
+Documentation:
+  Enabled: false
 
 Metrics/LineLength:
   Max: 100
   Exclude:
     - 'config/initializers/**/*.rb'
 
-Metrics/ModuleLength:
-  Exclude:
-    - 'test/**/*_test.rb'
-
-Metrics/ClassLength:
-  Exclude:
-    - 'test/**/*_test.rb'
-
-Metrics/BlockLength:
-  Exclude:
-    - 'config/environments/*.rb'
-    - 'test/**/*_test.rb'
+Style/ExpandPathArguments:
+  Enabled: false
 
 Style/FrozenStringLiteralComment:
   Enabled: false
