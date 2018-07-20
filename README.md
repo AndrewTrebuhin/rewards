@@ -1,24 +1,9 @@
-# README
+# My Rewards
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+https://my-rewards.herokuapp.com/
+https://my-rewards.herokuapp.com/docs - API Documentation
+Place auth_token to "api_key" field in Swagger UI after signing in to make requests.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Credentials:
+email: luke@republic.com
+password: maytheforcebewithyou

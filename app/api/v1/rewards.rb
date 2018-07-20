@@ -3,9 +3,12 @@ module V1
     before { authenticate! }
 
     resource :rewards do
-      desc 'Return all rewards'
+      desc "Return all user's rewards"
+      params do
+        optional :status, values: Reward.statuses.keys
+      end
       get '/' do
-        current_user.rewards
+        current_user.rewards.filter_by_status(params[:status])
       end
 
       desc 'Return reward by ID'
