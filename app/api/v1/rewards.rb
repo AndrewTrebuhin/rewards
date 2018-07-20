@@ -1,10 +1,11 @@
 module V1
   class Rewards < Grape::API
-    resource :rewards do
+    before { authenticate! }
 
+    resource :rewards do
       desc 'Return all rewards'
       get '/' do
-        Reward.all
+        current_user.rewards
       end
 
       desc 'Return reward by ID'

@@ -11,7 +11,7 @@ module V1
           when ActiveRecord::RecordInvalid
             error!({ message: exception.message, status: 406 }, 406)
           else
-            error!({ message: exception.message })
+            error!(message: exception.message)
           end
         end
       end
