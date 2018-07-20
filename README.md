@@ -1,9 +1,15 @@
 # My Rewards
+* Ruby version: 2.4.1
+* Rails version: 5.1.6
+* Database: PostgreSQL
 
+## Heroku demo
 https://my-rewards.herokuapp.com/
-https://my-rewards.herokuapp.com/docs - API Documentation
-Place auth_token to "api_key" field in Swagger UI after signing in to make requests.
 
-Credentials:
-email: luke@republic.com
-password: maytheforcebewithyou
+## API Documentation
+https://my-rewards.herokuapp.com/docs
+Place auth_token to "api_key" field after signing in to make requests.
+
+### Credentials
+``email: luke@republic.com``
+``password: maytheforcebewithyou``
